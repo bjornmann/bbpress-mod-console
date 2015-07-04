@@ -1,0 +1,86 @@
+#bbpressModDash .inside ul li div span, .note {
+  clear: both;
+  color: #999999;
+  display: block;
+  font-size: 90%;
+}
+#bbpressModDash .inside ul li div.actions{
+	float: right;
+	width: 30%;
+	padding-left: 10px;
+	border-left: 1px solid #ddd;
+}
+#bbpressModDash .inside ul li{
+	padding: 5px;
+	border-bottom: 1px solid #ddd;
+}
+#bbpressModDash .inside ul li:hover{
+	background: white;
+}
+#bbpressModDash .inside ul li div.mainInfo{
+	float: left;
+	width: 60%;
+}
+.clearfix {
+    clear: both;
+}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    visibility: hidden;
+}
+.reviewLink {
+  display: block;
+  font-size: 150%;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+#bbpressModDash .reviewToolBar input[type="checkbox"]{
+	padding: 0;
+	vertical-align: inherit;
+}
+#bbpressModDash .reviewToolBar input[type="checkbox"]#Sp_mentions,#bbpressModDash .reviewToolBar input[type="checkbox"]#aqha_mentions,#bbpressModDash .reviewToolBar input[type="checkbox"]#usef_mentions{
+margin-left: 10px;
+}
+#bbpressModDash .reviewToolBar div {
+	float: left;
+	width: 80%;
+}
+#bbpressModDash .reviewToolBar input[type="text"]{
+	text-align: center;
+}
+#bbpressModDash .reviewToolBar{
+	padding: 10px;
+	box-shadow:0 0 6px #ddd inset;
+	font-weight: bold;
+}
+#bbpressModDash .reviewToolBar button {
+	float: right;
+	padding: 10px;
+	background: #fcf299; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fcf299 0%, #f1da36 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcf299), color-stop(100%,#f1da36)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fcf299 0%,#f1da36 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fcf299 0%,#f1da36 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fcf299 0%,#f1da36 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fcf299 0%,#f1da36 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcf299', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */
+	border: 1px solid #f1da36;
+	color: #666;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius:2px;
+	margin-top: 15px;
+}
+#bbpressModDash .reviewToolBar button:hover{
+	background: #f1da36; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f1da36 0%, #fcf299 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1da36), color-stop(100%,#fcf299)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f1da36 0%,#fcf299 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f1da36 0%,#fcf299 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f1da36 0%,#fcf299 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f1da36 0%,#fcf299 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1da36', endColorstr='#fcf299',GradientType=0 ); /* IE6-9 */
+	cursor: pointer;
+}
