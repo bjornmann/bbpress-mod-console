@@ -40,9 +40,6 @@
 	padding: 0;
 	vertical-align: inherit;
 }
-#bbpressModDash .reviewToolBar input[type="checkbox"]#Sp_mentions,#bbpressModDash .reviewToolBar input[type="checkbox"]#aqha_mentions,#bbpressModDash .reviewToolBar input[type="checkbox"]#usef_mentions{
-margin-left: 10px;
-}
 #bbpressModDash .reviewToolBar div {
 	float: left;
 	width: 80%;

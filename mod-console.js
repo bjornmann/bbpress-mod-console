@@ -1,12 +1,12 @@
-var modConsole = modConsole || {};
+var BBPMC_modConsole = BBPMC_modConsole || {};
 (function($) {
 	$('.contentExpander').on('click',function(){
 		$(this).next('.expandContent').toggle();
 	});
-	function load_posts_ajax(){
+	function BBPMC_load_posts_ajax(){
 		query = modQuery;
 		$.post(ajaxurl, {
-			action: 'ajax_custom_load_posts',
+			action: 'BBPMC_ajax_custom_load_posts',
 			nonce: query.nonce,
 			query: $.extend({}, query, {paged: query.paged+1})
 		}, function(result){
@@ -25,7 +25,7 @@ var modConsole = modConsole || {};
 			load_posts_ajax();
 		}
 	});
-	modConsole.setReviewed = function(postid,status){
+	BBPMC_modConsole.setReviewed = function(postid,status){
 	 	if(status == 'no'){
 		 	status = 'yes';
 	 	}
@@ -33,17 +33,17 @@ var modConsole = modConsole || {};
 		 	status = 'no';
 	 	}
 		$.post(ajaxurl, {
-			action: 'ajax_set_reviewed',
+			action: 'BBPMC_ajax_set_reviewed',
 		    'postId': postid,
 		    'status': status
 		}, function(result){
 			if(status == 'yes'){
 				$('.post-'+postid+' .reviewLink').html('<span style="color:green">&#9679; Reviewed </span>');
-				$('.post-'+postid+' .reviewLink').attr('onClick', "modConsole.setReviewed("+postid+",'yes')" );
+				$('.post-'+postid+' .reviewLink').attr('onClick', "BBPMC_modConsole.setReviewed("+postid+",'yes')" );
 			}
 			else{
 				$('.post-'+postid+' .reviewLink').html('<span style="color:red">&#9679; Not Reviewed </span>');
-				$('.post-'+postid+' .reviewLink').attr('onClick', "modConsole.setReviewed("+postid+",'no')" );
+				$('.post-'+postid+' .reviewLink').attr('onClick', "BBPMC_modConsole.setReviewed("+postid+",'no')" );
 			}
 		})
 	}
