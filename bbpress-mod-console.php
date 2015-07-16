@@ -3,9 +3,10 @@
 Plugin Name: Mod console for bbPress
 Description: Dashboard mod view, make sure someone is looking at all your forum posts.
 Author: Bjorn Mann
+Author URI:  bjornmann.com
 Version: 1.2
 
-*/BBPMC_
+*/
 add_action('wp_ajax_ajax_custom_load_posts', 'BBPMC_ajax_custom_load_posts');
 add_action('wp_ajax_nopriv_ajax_custom_load_posts', 'BBPMC_ajax_custom_load_posts');
 
